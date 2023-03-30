@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
+    <!-- Cas pratique :
+pouvez vous ajouter une nouvelle feature à votre projet  => ajax
+
+ajouter un bouton dans votre page web 
+lorsque vous cliquer dessus => requête ajax qui va appeler une API (retourne un liste de pays)
+afficher la liste des pays SOUS le bouton 
+utiliser jquery pour réaliser ce travail 
+
+=> clore la branch/ajax
+ -->
     <p>hello world</p>
 
     <ul class="menu">
@@ -14,5 +27,10 @@
       <li>B</li>
       <li>C</li>
     </ul>
+
+    <p>cliquer ici pour une liste des pays</p>
+    <button id="pays">pays</button>
+
+    <div id="liste"></div>
   </body>
 </html>
