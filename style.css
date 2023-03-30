@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    border: 1px solid black;
+    font-family: sans-serif;
+}
