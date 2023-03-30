@@ -50,7 +50,7 @@ $(function () {
     $("#cocktail").on("click", () => {
         $("#resulcoc").css({
             display: "grid",
-            "grit-template-columns": "repeat(3, 1fr)",
+            "grid-template-columns": "repeat(3, 1fr)",
             gap: 10,
             "max-width": 1200,
             margin: "0 auto"
