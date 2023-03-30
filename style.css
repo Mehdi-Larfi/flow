@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu li {
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
