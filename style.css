@@ -7,3 +7,9 @@
     border: 1px solid black;
     font-family: sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}

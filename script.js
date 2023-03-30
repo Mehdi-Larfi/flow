@@ -47,4 +47,40 @@ $(function () {
              }*/
         })
     })
+    $("#cocktail").on("click", () => {
+        $("#resulcoc").css({
+            display: "grid",
+            "grit-template-columns": "repeat(3, 1fr)",
+            gap: 10,
+            "max-width": 1200,
+            margin: "0 auto"
+        })
+
+        $.ajax("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita", {
+            success: function (data) {
+                const cocktails = data.drinks;
+                let html = ``;
+                for (let cocktail of cocktails) {
+                    html += `<article>
+                    <h2>${cocktail.strDrink}</h2>
+                    <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strTags}">
+                    <p> ${cocktail.strInstructions}</p>
+                </article>`
+                }
+                console.log("ok")
+                $("#resulcoc").html(html);
+            },
+            error: function () {
+                // attend que le réseau retourne une réponse en erreur
+                console.log("erreur");
+            },
+            complete: function () {
+                // attend que le réseau retourne une réponse quelquelsoit
+            }
+
+
+        }
+
+        )
+    })
 })
